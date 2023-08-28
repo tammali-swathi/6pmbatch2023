@@ -29,4 +29,5 @@ STEP-5: CREATE INFRA SETUP
 		TO SEE THE CLUSTER: kops get cluster
 		IF YOU WANT TO EDIT THE CLUSTER: kops edit cluster cluster_name
 		TO RUN THE CLUSTER: kops update cluster --name nareshit.k8s.local --yes --admin
+                TO SWITCH TO CREATED NAMESPACE: kubectl config set-context $(kubectl config current-context) --namespace=NAMESPACENAME 	
     TO DELETE CLUSTER: kops delete cluster --name rahamdevopst.k8s.local --yes
